@@ -871,7 +871,7 @@ import 'ui-library/includes/button.js';
 import 'ui-library/includes/alert.js';
 ```
 
-Some libraries such as Rollup or Webpack can optimize treeshaking of the above "side effects", by setting a `"sideEffects"` property in your `package.json`. While it can improve package size and dead code elimination, it also can sometimes cause the bundler to skip various optimizations and checks and wrongfully treeshake code that is actually used. It is error prone and difficult to keep up to date, and in some cases, you may not even realize you have sideEffects. All that to say, if you're going to use it, make sure you're properly testing it in various bundlers.
+Some bundlers such as Rollup or Webpack can optimize treeshaking of the above "side effects", by setting a `"sideEffects"` property in your `package.json`. While it can improve package size and dead code elimination, it also can sometimes cause the bundler to skip various optimizations and checks and wrongfully treeshake code that is actually used. It is error prone and difficult to keep up to date, and in some cases, you may not even realize you have sideEffects. All that to say, if you're going to use it, make sure you're properly testing it in various bundlers.
 
 More reading on sideEffects: 
 
